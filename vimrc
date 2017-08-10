@@ -12,6 +12,7 @@ set number
 syntax on
 filetype on
 filetype plugin on
+set noruler
 set nohlsearch
 set wildmode=longest,list,full
 set wildmenu
@@ -25,7 +26,7 @@ set spelllang=it,en
 "
 "
 "The local leader
-let maploclleader = "-"
+let maplocalleader = "-"
 "
 "Settings for 80 character max
 set colorcolumn=+1
@@ -91,6 +92,21 @@ nnoremap <leader>tt <c-w>T %
 
 nnoremap <leader>cn :cnext<cr>
 nnoremap <leader>cp :cprevious<cr>
+
+" Spelling and dictionary words
+nnoremap <silent><LocalLeader>ss :setlocal spell!<cr>
+nnoremap <LocalLeader>ns ]s
+nnoremap <LocalLeader>ps [s
+nnoremap <LocalLeader>aw zg
+
+nnoremap <silent><LocalLeader>hw :setlocal hlsearch!<cr>
+
+" Status line
+set statusline=%f
+set statusline+=\ -\
+set statusline+=FileType:
+set statusline+=%y
+
 "
 "
 "
