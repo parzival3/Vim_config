@@ -107,7 +107,13 @@ set statusline+=\ -\
 set statusline+=FileType:
 set statusline+=%y
 
-"
+
+" Explore the files
+
+nnoremap <silent><Leader>ve :Vexplore<cr>
+nnoremap <silent><Leader>se :Vexplore<cr>
+nnoremap <silent><Leader>te :Texplore<cr>
+
 "
 "
 "
