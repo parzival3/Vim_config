@@ -1,2 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =0
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/home/enrico/Git/Tesi'
+let g:netrw_dirhist_2='/home/enrico/Git/Tesi/Tex_Files/Chapters/Chapter_2'
+let g:netrw_dirhist_3='/home/enrico/Git/Tesi/Tex_Files/Chapters'
+let g:netrw_dirhist_4='/home/enrico/Git/Tesi/Tex_Files'
+let g:netrw_dirhist_5='/home/enrico/Git/Tesi'
+let g:netrw_dirhist_6='/home/enrico/Git/Tesi/Images'
+let g:netrw_dirhist_7='/home/enrico/Git/Tesi/Images/Eps'
