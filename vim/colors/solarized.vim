@@ -1114,3 +1114,4 @@ autocmd ColorScheme * if g:colors_name != "solarized" | silent! aunmenu Solarize
 " THE SOFTWARE.
 "
 " vim:foldmethod=marker:foldlevel=0
+"}}}

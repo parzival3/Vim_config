@@ -8,16 +8,19 @@
 "
 "GENERAL SETTINGS
 "
+source $HOME/.vim/function.vim
 set number
 syntax on
 filetype on
 filetype plugin on
 set noruler
 set nohlsearch
+set modelines=5
+colorscheme solarized 
+set background=dark
 set wildmode=longest,list,full
 set wildmenu
-"colorscheme solarized
-let g:solarized_termcolors=256
+set term=screen-256color
 set relativenumber
 set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
 set spelllang=it,en
@@ -77,10 +80,10 @@ inoremap <Down> <nop>
 "
 "
 "Navigazione tra le schede
-nnoremap <silent> <c-k> :wincmd k<cr>
-nnoremap <silent> <c-l> :wincmd l<cr>
-nnoremap <silent> <c-h> :wincmd h<cr>
-nnoremap <silent> <c-j> :wincmd j<cr>
+"nnoremap <silent> <c-k> :wincmd k<cr>
+"nnoremap <silent> <c-l> :wincmd l<cr>
+"nnoremap <silent> <c-h> :wincmd h<cr>
+"nnoremap <silent> <c-j> :wincmd j<cr>
 
 nnoremap <silent> <Left>   :vertical resize -5<cr>
 nnoremap <silent> <Right>  :vertical resize +5<cr>
@@ -93,8 +96,10 @@ nnoremap <leader>tt <c-w>T %
 nnoremap <leader>cn :cnext<cr>
 nnoremap <leader>cp :cprevious<cr>
 
+
 " Spelling and dictionary words
 nnoremap <silent><LocalLeader>ss :setlocal spell!<cr>
+nnoremap <F8> :call SetSpell()<cr>
 nnoremap <LocalLeader>ns ]s
 nnoremap <LocalLeader>ps [s
 nnoremap <LocalLeader>aw zg
@@ -102,6 +107,7 @@ nnoremap <LocalLeader>aw zg
 nnoremap <silent><LocalLeader>hw :setlocal hlsearch!<cr>
 
 " Status line
+set laststatus=2
 set statusline=%f
 set statusline+=\ -\
 set statusline+=FileType:
@@ -111,7 +117,7 @@ set statusline+=%y
 " Explore the files
 
 nnoremap <silent><Leader>ve :Vexplore<cr>
-nnoremap <silent><Leader>se :Vexplore<cr>
+nnoremap <silent><Leader>se :Sexplore<cr>
 nnoremap <silent><Leader>te :Texplore<cr>
 "
 
