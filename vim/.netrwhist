@@ -1,4 +1,10 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
-let g:netrw_dirhist_1='/home/enrico/Git/Tesi/Tex_Files/Chapters/Chapter_1'
-let g:netrw_dirhist_2='/home/enrico/Git/Tesi/Tex_Files/Ideas'
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/home/enrico/Git/Vim_config/vim/ftplugin'
+let g:netrw_dirhist_2='/etc/portage/patches/x11-wm'
+let g:netrw_dirhist_3='/etc/portage/patches/x11-wm/dwm'
+let g:netrw_dirhist_4='/etc/portage/patches/x11-wm'
+let g:netrw_dirhist_5='/etc/portage/patches/x11-wm/dwm'
+let g:netrw_dirhist_6='/etc/portage/patches/x11-wm'
+let g:netrw_dirhist_7='/etc/portage/patches/x11-wm/dwm'
+let g:netrw_dirhist_8='/home/enrico/Git/Tesi/Tex_Files/Chapters/Chapter_3'

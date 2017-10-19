@@ -15,16 +15,22 @@ filetype on
 filetype plugin on
 set noruler
 set nohlsearch
+set modeline
 set modelines=5
-colorscheme solarized 
 set background=dark
+colorscheme gruvebox 
+let g:gruvebox_contrast_dark='hard'
+
+
 set wildmode=longest,list,full
 set wildmenu
 set term=screen-256color
 set relativenumber
 set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
 set spelllang=it,en
-"
+set list
+set listchars=tab:▸-,eol:¬,trail:·
+
 "
 "
 "
@@ -34,7 +40,7 @@ let maplocalleader = "-"
 "Settings for 80 character max
 set colorcolumn=+1
 set textwidth=80
-set expandtab
+"set expandtab
 "
 "Backup folder
 set backupdir=~/.cache/vim/backup
@@ -45,8 +51,8 @@ set directory=~/.cache/vim/backup
 nnoremap <silent><localleader>h :nohlsearch<cr>
 "
 "Settings for tabspace as 8 character like you want
-set shiftwidth=8
-set tabstop=8
+set shiftwidth=4
+set tabstop=4
 "
 "
 "Indent current file
