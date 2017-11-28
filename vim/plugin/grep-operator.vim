@@ -12,4 +12,6 @@ if a:type ==# 'v'
 
     silent execute "grep! -R " . shellescape(@@) . " ."
     copen 10
+	redraw!
+	redraw!
 endfunction

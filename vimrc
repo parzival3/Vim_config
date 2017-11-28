@@ -75,6 +75,7 @@ nnoremap <silent> <Leader>ev :split $MYVIMRC <CR>
 "
 "Navigation Command
 nnoremap L A <esc>
+inoremap j; <esc>
 inoremap jò <esc>
 vnoremap j; <esc>
 
