@@ -8,6 +8,8 @@
 "
 "GENERAL SETTINGS
 "
+set guifont=Roboto\ Mono\ for\ Powerline\ 10
+
 source $HOME/.vim/function.vim
 set number
 syntax on
@@ -145,6 +147,8 @@ augroup END
 
 "
 "
+" For Fakevim Qtcreator
+nnoremap <F6> :Run<CR>
 "
 "
 "

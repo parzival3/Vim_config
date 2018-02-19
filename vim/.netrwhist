@@ -1,10 +1,4 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =8
-let g:netrw_dirhist_1='/opt/STMicroelectronics/STM32Cube/STM32Cube_FW_F4_V1.16.0'
-let g:netrw_dirhist_2='/opt/STMicroelectronics/STM32Cube/STM32Cube_FW_F4_V1.16.0/Drivers'
-let g:netrw_dirhist_3='/opt/STMicroelectronics/STM32Cube/STM32Cube_FW_F4_V1.16.0/Drivers/BSP'
-let g:netrw_dirhist_4='/opt/STMicroelectronics/STM32Cube/STM32Cube_FW_F4_V1.16.0/Drivers/BSP/STM32F4-Discovery'
-let g:netrw_dirhist_5='/home/enrico/Documents/Stm32F4/AUDIO_DAC/Src'
-let g:netrw_dirhist_6='/opt/STMicroelectronics/horrorophone-eclipse-with-makefile/src'
-let g:netrw_dirhist_7='/home/enrico/Documents/Stm32F4/Read_The_Pot/Read_The_Pot/Src'
-let g:netrw_dirhist_8='/home/enrico/Documents/Stm32F4/AUDIO_DAC/Src'
+let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_1='/usr/share/applications'
+let g:netrw_dirhist_2='/home/enrico/Git/NotSoPublic/Statement_of_purpose'
