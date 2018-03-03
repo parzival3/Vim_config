@@ -1,4 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_cnt =6
 let g:netrw_dirhist_1='/usr/share/applications'
 let g:netrw_dirhist_2='/home/enrico/Git/NotSoPublic/Statement_of_purpose'
+let g:netrw_dirhist_3='/home/enrico/Yocto_tyr/poky-rocko/build/conf'
+let g:netrw_dirhist_4='/home/enrico/Yocto_tyr/poky/build/conf'
+let g:netrw_dirhist_5='/usr/share/xsessions'
+let g:netrw_dirhist_6='/home/enrico/Git/Vim_config/.git'

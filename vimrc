@@ -152,4 +152,7 @@ nnoremap <F6> :Run<CR>
 "
 "
 "
-
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"	PATHOGEN
+execute pathogen#infect()
+set statusline+=%{fugitive#statusline()}
