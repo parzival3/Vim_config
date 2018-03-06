@@ -20,8 +20,6 @@ set nohlsearch
 set modeline
 set modelines=5
 set background=dark
-colorscheme gruvebox 
-let g:gruvebox_contrast_dark='hard'
 
 
 set wildmode=longest,list,full
@@ -151,8 +149,13 @@ augroup END
 nnoremap <F6> :Run<CR>
 "
 "
-"
+" Colorscheme
+colorscheme gruvebox 
+let g:gruvebox_contrast_dark='hard'
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "	PATHOGEN
 execute pathogen#infect()
 set statusline+=%{fugitive#statusline()}
+nnoremap <F9> :Gstatus <cr>
+nnoremap <F10> :Gcommit <cr>
