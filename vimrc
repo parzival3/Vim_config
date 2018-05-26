@@ -159,3 +159,4 @@ execute pathogen#infect()
 set statusline+=%{fugitive#statusline()}
 nnoremap <F9> :Gstatus <cr>
 nnoremap <F10> :Gcommit <cr>
+autocmd QuickFixCmdPost *grep* cwindow
