@@ -74,7 +74,7 @@ nnoremap <silent> <Leader>ev :split $MYVIMRC <CR>
 "
 "
 "Navigation Command
-nnoremap L A <esc>
+nnoremap LA <esc>
 inoremap j; <esc>
 inoremap jò <esc>
 vnoremap j; <esc>
@@ -163,3 +163,4 @@ execute pathogen#infect()
 set statusline+=%{fugitive#statusline()}
 nnoremap <F9> :Gstatus <cr>
 nnoremap <F10> :Gcommit <cr>
+autocmd QuickFixCmdPost *grep* cwindow
