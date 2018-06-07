@@ -1,5 +1,5 @@
 "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-"	This is my vimrc config made with passion end painful 
+"	This is my vimrc config made with passion end painful
 "	hours of work I hop you'll apriciete it
 "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 "
@@ -79,23 +79,17 @@ inoremap j; <esc>
 inoremap jò <esc>
 vnoremap j; <esc>
 
-inoremap <Left> <nop>
-inoremap <Right> <nop>
-inoremap <Up> <nop>
-inoremap <Down> <nop>
-
+" Commented out for normal peopele
+"inoremap <Left> <nop>
+"inoremap <Right> <nop>
+"inoremap <Up> <nop>
+"inoremap <Down> <nop>
 "
 "
-"Navigazione tra le schede
-"nnoremap <silent> <c-k> :wincmd k<cr>
-"nnoremap <silent> <c-l> :wincmd l<cr>
-"nnoremap <silent> <c-h> :wincmd h<cr>
-"nnoremap <silent> <c-j> :wincmd j<cr>
-
-nnoremap <silent> <Left>   :vertical resize -5<cr>
-nnoremap <silent> <Right>  :vertical resize +5<cr>
-nnoremap <silent> <Up>     :resize -5<cr>
-nnoremap <silent> <Down>   :resize +5<cr>
+nnoremap <S-Left>   :vertical resize -5<cr>
+nnoremap <S-Right>  :vertical resize +5<cr>
+nnoremap <S-Up>     :resize -5<cr>
+nnoremap <S-Down>   :resize +5<cr>
 
 nnoremap <leader>tt <c-w>T %
 
@@ -133,14 +127,14 @@ nnoremap <silent><Leader>te :Texplore<cr>
 " Editing hex file
 "
 augroup Binary
-  au!
-  au BufReadPre  *.bin let &bin=1
-  au BufReadPost *.bin if &bin | %!xxd
-  au BufReadPost *.bin set ft=xxd | endif
-  au BufWritePre *.bin if &bin | %!xxd -r
-  au BufWritePre *.bin endif
-  au BufWritePost *.bin if &bin | %!xxd
-  au BufWritePost *.bin set nomod | endif
+	au!
+	au BufReadPre  *.bin let &bin=1
+	au BufReadPost *.bin if &bin | %!xxd
+	au BufReadPost *.bin set ft=xxd | endif
+	au BufWritePre *.bin if &bin | %!xxd -r
+	au BufWritePre *.bin endif
+	au BufWritePost *.bin if &bin | %!xxd
+	au BufWritePost *.bin set nomod | endif
 augroup END
 
 "
@@ -149,8 +143,18 @@ augroup END
 nnoremap <F6> :Run<CR>
 "
 "
+" Highlight
+augroup Highlight
+	au ColorScheme * highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
+	au BufWinEnter * match ExtraWhitespace /\s\+$/
+	au InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+	au InsertLeave * match ExtraWhitespace /\s\+$/
+	au BufWinLeave * call clearmatches()
+augroup END
+"
+"
 " Colorscheme
-colorscheme gruvebox 
+colorscheme gruvebox
 let g:gruvebox_contrast_dark='hard'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
