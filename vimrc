@@ -88,6 +88,12 @@ vnoremap j; <esc>
 "inoremap <Right> <nop>
 "inoremap <Up> <nop>
 "inoremap <Down> <nop>
+" Commented out for normal peopele
+"
+nnoremap h <nop>
+nnoremap l <nop>
+nnoremap j <nop>
+nnoremap k <nop>
 "
 "
 nnoremap <S-Left>   :vertical resize -5<cr>
