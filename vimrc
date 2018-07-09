@@ -37,6 +37,10 @@ set listchars=tab:▸-,eol:¬,trail:·
 "The local leader
 let maplocalleader = "-"
 "
+"Source local configuration
+"
+nnoremap <localleader>sv :source .lvimrc<cr>
+"
 "Settings for 80 character max
 set colorcolumn=+1
 set textwidth=80
